@@ -1,0 +1,150 @@
+CRITICAL - 2026-04-14 00:45:15 --> ErrorException: Undefined variable $data
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 3.
+ 1 APPPATH\Views\v_produk.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 3)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\ProdukController.php(20): view('v_produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProdukController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:02:35 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 10.
+ 1 APPPATH\Views\v_produk.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 10)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->produk()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:02:37 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 10.
+ 1 APPPATH\Views\v_produk.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 10)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->produk()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:02:49 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 10.
+ 1 APPPATH\Views\v_produk.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 10)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->produk()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:02:50 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 10.
+ 1 APPPATH\Views\v_produk.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 10)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->produk()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:06:51 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 34.
+ 1 APPPATH\Views\v_produk.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 34)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\ProdukController.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProdukController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:06:54 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 34.
+ 1 APPPATH\Views\v_produk.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 34)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\ProdukController.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProdukController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:07:05 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 34.
+ 1 APPPATH\Views\v_produk.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 34)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\ProdukController.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProdukController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:07:09 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 34.
+ 1 APPPATH\Views\v_produk.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 34)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\ProdukController.php(12): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProdukController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-14 01:32:34 --> ErrorException: Undefined variable $dataproduk
+[Method: GET, Route: produk]
+in APPPATH\Views\v_produk.php on line 36.
+ 1 APPPATH\Views\v_produk.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataproduk', 'E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php', 36)
+ 2 SYSTEMPATH\View\View.php(240): include('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\app\\Views\\v_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_produk', [], true)
+ 5 APPPATH\Controllers\ProdukController.php(14): view('v_produk')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProdukController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\pertemuan5\\codeigniter4-framework-b3359be\\public\\index.php')

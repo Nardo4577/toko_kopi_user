@@ -1,0 +1,315 @@
+ERROR - 2026-04-26 07:18:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(899): CodeIgniter\Model->doInsert(Array)
+#6 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(668): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(752): CodeIgniter\Model->insert(Array, false)
+#8 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\app\Controllers\AuthController.php(45): CodeIgniter\BaseModel->save(Array)
+#9 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(951): App\Controllers\AuthController->registerAction()
+#10 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\rewrite.php(44): require_once('D:\\Xampp\\php\\to...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+#4 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(899): CodeIgniter\Model->doInsert(Array)
+#5 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(668): CodeIgniter\BaseModel->insert(Array, false)
+#6 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(752): CodeIgniter\Model->insert(Array, false)
+#7 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\app\Controllers\AuthController.php(45): CodeIgniter\BaseModel->save(Array)
+#8 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(951): App\Controllers\AuthController->registerAction()
+#9 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Xampp\php\toko_kopi\Project_UTS_PaymentGateway_KedaiKopi\Project_UTS_PaymentGateway_KedaiKopi\system\rewrite.php(44): require_once('D:\\Xampp\\php\\to...')
+#15 {main}
+CRITICAL - 2026-04-26 07:18:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: register_action]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `password`, `role`) VALUES (:username:, :password:, :role:)', [...], false)
+ 3 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\AuthController.php(45): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->registerAction()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Xampp\\php\\toko_kopi\\Project_UTS_PaymentGateway_KedaiKopi\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+DEBUG - 2026-04-26 07:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-26 07:22:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\AuthController.php(11): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Xampp\\php\\toko_kopi\\Project_UTS_PaymentGateway_KedaiKopi\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+CRITICAL - 2026-04-26 07:25:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\AuthController.php(11): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Xampp\\php\\toko_kopi\\Project_UTS_PaymentGateway_KedaiKopi\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+CRITICAL - 2026-04-26 07:25:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\AuthController.php(11): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Xampp\\php\\toko_kopi\\Project_UTS_PaymentGateway_KedaiKopi\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+CRITICAL - 2026-04-26 07:25:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\AuthController.php(11): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Xampp\\php\\toko_kopi\\Project_UTS_PaymentGateway_KedaiKopi\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+DEBUG - 2026-04-26 07:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-26 07:28:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\AuthController.php(11): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Xampp\\php\\toko_kopi\\Project_UTS_PaymentGateway_KedaiKopi\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+DEBUG - 2026-04-26 07:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-26 07:28:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\AuthController.php(11): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Xampp\\php\\toko_kopi\\Project_UTS_PaymentGateway_KedaiKopi\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+DEBUG - 2026-04-26 07:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 07:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 08:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 08:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 08:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 08:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 09:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 13:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-26 13:51:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'toko_kopi', 3306, '', 0)
+#1 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(899): CodeIgniter\Model->doInsert(Array)
+#6 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(668): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(752): CodeIgniter\Model->insert(Array, false)
+#8 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\app\Controllers\AuthController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(951): App\Controllers\AuthController->registerAction()
+#10 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\rewrite.php(44): require_once('E:\\Semester_4\\P...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+#4 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(899): CodeIgniter\Model->doInsert(Array)
+#5 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Model.php(668): CodeIgniter\BaseModel->insert(Array, false)
+#6 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\BaseModel.php(752): CodeIgniter\Model->insert(Array, false)
+#7 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\app\Controllers\AuthController.php(39): CodeIgniter\BaseModel->save(Array)
+#8 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(951): App\Controllers\AuthController->registerAction()
+#9 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 E:\Semester_4\PWL\UTS\Project_UTS_PaymentGateway_KedaiKopi\system\rewrite.php(44): require_once('E:\\Semester_4\\P...')
+#15 {main}
+CRITICAL - 2026-04-26 13:51:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: register_action]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `password`, `role`) VALUES (:username:, :password:, :role:)', [...], false)
+ 3 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\AuthController.php(39): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->registerAction()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester_4\\PWL\\UTS\\Project_UTS_PaymentGateway_KedaiKopi\\public\\index.php')
+DEBUG - 2026-04-26 14:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 14:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 14:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 14:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 15:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-26 16:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
